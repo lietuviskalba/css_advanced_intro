@@ -9,7 +9,7 @@
     For creating color variables by using :root. The :root selector matches the document's root element
 */
 :root {
-    --h1_border_color: #2266a9;
+    --h1_border_color: #7c9cbb;
 }
 
 /* Flexbox
@@ -23,12 +23,17 @@
     justify-content: center;
 }
 
+body{
+    margin: 0px;
+    background-color: #415366;
+}
+
 h1 {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 3em;
     font-weight: 300;
-
+    box-shadow: 4px 4px 8px;
     width: 150px;
     margin: 10px;
     border-bottom: 5px solid var(--h1_border_color);
@@ -40,9 +45,10 @@ img {
     width: 450px;
     height: 300px;
     margin: 10px;
+
+    transition: all 2s;
 }
 
 img:hover {
-    width: 500px;
-    height: 400px;
+    transform: scale(1.2);
 }
