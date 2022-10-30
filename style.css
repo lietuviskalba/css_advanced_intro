@@ -1,4 +1,48 @@
+/*
+>> Documentation for CSS
+    [] Flexbox
+>> Page: 14
+>> Link to doc: https://docs.google.com/document/d/1NoFPu4Z9_kNf3hDG59YhuLVXH1JKc71kgO7CtFawtDw/edit?skip_itp2_check=true#
+*/
+
+/* 
+    For creating color variables by using :root. The :root selector matches the document's root element
+*/
+:root {
+    --h1_border_color: #2266a9;
+}
+
+/* Flexbox
+    display: The display property specifies the display behavior (the type of rendering box) of an element.
+    flex-wrap: The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked.
+    justify-content: The CSS justify-content property defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container.
+ */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 300;
+
+    width: 150px;
+    margin: 10px;
+    border-bottom: 5px solid var(--h1_border_color);
+    border-right: 5px solid var(--h1_border_color);
+    /* border-left: 5px solid var(--h1_border_color); */
+}
+
 img {
     width: 450px;
     height: 300px;
+    margin: 10px;
+}
+
+img:hover {
+    width: 500px;
+    height: 400px;
 }
