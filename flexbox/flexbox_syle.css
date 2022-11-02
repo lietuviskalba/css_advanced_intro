@@ -18,12 +18,18 @@
     justify-content: The CSS justify-content property defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container.
  */
 .container {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    
+     /* To use flexbox, set the display to flex */
+    display: flex;
+    /* Makes the elements wrap to a new line (just like a word document) */
+    flex-wrap: wrap;
+    gap: 20px;
 
-    margin: 20px auto;
+    margin: 30px auto;
+    padding: 20px 10px;
     background-color: #135663;
+    border: 3px solid #256A77;
     border-radius: 20px;
     width: 80%;
 }
@@ -39,18 +45,19 @@ h1 {
     justify-content: center;
     border-bottom: 5px solid var(--h1_border_color);
     border-right: 5px solid var(--h1_border_color);
-    /* border-left: 5px solid var(--h1_border_color); */
 }
 
 img {
-    width: 450px;
-    height: 300px;
-    margin: 10px;
+    width: 300px;
+    height: 250px;
+    /* margin: 10px; */
     border-radius: 10px;
-
-    transition: all 2s;
+    /* Makes the .img:hover (element below) have a delay when the effect is triggered */
+    transition: all 1s;
 }
 
 img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    border-radius: 20px;
+    border: 10px dotted #659DA8;
 }
