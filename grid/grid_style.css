@@ -4,3 +4,39 @@
 >> Page: 16
 >> Link to doc: https://docs.google.com/document/d/1NoFPu4Z9_kNf3hDG59YhuLVXH1JKc71kgO7CtFawtDw/edit?skip_itp2_check=true#
 */
+/* Set up entire group of picture properties */
+.container {
+    justify-items: center;
+
+    /* To use CSS grid, set the display to grid */
+    display: grid;
+    /* Gap creator between elements */
+    gap: 20px;
+
+    /* How many columns to use. grid-template-columns: 300px (col_num_1), 200px (col_num_2), ... */
+    /* grid-template-columns: 300px 300px;  */
+    /* grid-template-columns: 33% 33% 33%; */
+
+    /* fr are fractions scale better then px ir % */
+    grid-template-columns: 1fr 1fr 1fr;
+        
+}
+
+/* Set up individual image properties */
+.picture {
+    /* Changes the mouse cursor when hover over item */
+    cursor: pointer;
+    width: 300px;
+    height: 250;
+    border: 5px solid #135663;
+    border-radius: 10px;
+    /* Makes the .picture:hover (element below) have a delay when the effect is triggered */
+    transition: all 0.3s linear;
+}
+
+.picture:hover {
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0px 0px 20px 10px #659da8c8;
+    border: 5px solid #3D7F8B;
+    border-radius: 100px;
+}

@@ -23,14 +23,18 @@ nav{
 ul{
     margin: 0px;
     padding: 1em;
+    word-spacing: 10px;
 }
 li {
     
     list-style: name;
     display: inline-block;
+    font-size: 2em;
+    
 }
 a{
     color: rgb(150, 198, 240);
+    
 }
 
 h1 {
