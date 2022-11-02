@@ -7,6 +7,13 @@
 /* Set up entire group of picture properties */
 .container {
     justify-items: center;
+    margin: 30px auto;
+    padding: 20px 10px;
+    background-color: #135663;
+    border: 3px solid #256A77;
+    border-radius: 20px;
+    width: 90%;
+    
 
     /* To use CSS grid, set the display to grid */
     display: grid;
@@ -16,10 +23,15 @@
     /* How many columns to use. grid-template-columns: 300px (col_num_1), 200px (col_num_2), ... */
     /* grid-template-columns: 300px 300px;  */
     /* grid-template-columns: 33% 33% 33%; */
+    /* grid-template-columns: repeat(3, 1fr); same as 1fr 1fr 1fr */
+     /* grid-template-columns: auto; fill in any available space we have*/
 
     /* fr are fractions scale better then px ir % */
-    grid-template-columns: 1fr 1fr 1fr;
-        
+    grid-template-columns: 1fr 1fr;
+    
+    /* Just like for columns this is for rows */
+    grid-template-rows: 1fr 2fr;
+    
 }
 
 /* Set up individual image properties */
@@ -28,7 +40,7 @@
     cursor: pointer;
     width: 300px;
     height: 250;
-    border: 5px solid #135663;
+    border: 5px solid #033F4A;
     border-radius: 10px;
     /* Makes the .picture:hover (element below) have a delay when the effect is triggered */
     transition: all 0.3s linear;
