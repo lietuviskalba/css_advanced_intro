@@ -13,22 +13,27 @@
 }
 
 /* Flexbox
-    display: The display property specifies the display behavior (the type of rendering box) of an element.
-    flex-wrap: The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked.
-    justify-content: The CSS justify-content property defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container.
  */
 .container {
+    /* Justify-content: Utilities for controlling how flex and grid items are positioned along a container's main axis. */
+    /* https://tailwindcss.com/docs/justify-content */
     justify-content: center;
     
      /* To use flexbox, set the display to flex */
     display: flex;
-    /* Makes the elements wrap to a new line (just like a word document) */
+    /* flex-wrap. Utilities for controlling how flex items wrap (just like a word document). */
+    /* https://tailwindcss.com/docs/flex-wrap */
     flex-wrap: wrap;
+
+    /* gap. Utilities for controlling gutters between grid and flexbox items. */
+    /* https://tailwindcss.com/docs/gap */
     gap: 20px;
+
+    /* Nice design setup for container */
+    background-color: #135663;
 
     margin: 30px auto;
     padding: 20px 10px;
-    background-color: #135663;
     border: 3px solid #256A77;
     border-radius: 20px;
     width: 80%;
@@ -50,7 +55,6 @@ h1 {
 img {
     width: 300px;
     height: 250px;
-    /* margin: 10px; */
     border-radius: 10px;
     /* Makes the .img:hover (element below) have a delay when the effect is triggered */
     transition: all 1s;
