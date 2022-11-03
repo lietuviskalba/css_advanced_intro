@@ -6,47 +6,32 @@
 */
 /* Set up entire group of picture properties */
 .container {
+    justify-items: center;
     margin: 30px auto;
     padding: 20px 10px;
     background-color: #135663;
     border: 3px solid #256A77;
     border-radius: 20px;
-    width: 99%;
-
+    width: 90%;
+    
 
     /* To use CSS grid, set the display to grid */
     display: grid;
     /* Gap creator between elements */
-    gap: 10px;
+    gap: 20px;
 
     /* How many columns to use. grid-template-columns: 300px (col_num_1), 200px (col_num_2), ... */
     /* grid-template-columns: 300px 300px;  */
     /* grid-template-columns: 33% 33% 33%; */
-    /* grid-template-columns: auto 2fr 1fr; fr is fraction (best way to use it with grids) */
     /* grid-template-columns: repeat(3, 1fr); same as 1fr 1fr 1fr */
-    /* grid-template-columns: auto; fill in any available space we have*/
-    /* grid-template-columns: auto 2fr 1fr; fr are fractions scale better then px ir % */
+     /* grid-template-columns: auto; fill in any available space we have*/
 
-    /* Cream de le crop of how to create responsive UI */
-    /* The repeat() CSS function allows columns or rows with a recurring pattern to be written in a more compact form*/
-    /* The minmax() CSS function defines a size range greater than or equal to min and less than or equal to max.*/
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-
+    /* fr are fractions scale better then px ir % */
+    grid-template-columns: 1fr 1fr;
+    
     /* Just like for columns this is for rows */
     grid-template-rows: 1fr 2fr;
-
-    /* Justify items. Utilities for controlling how grid items are aligned along their inline axis */
-    /* TL;DR This is for aligning  items vertically */
-    /* https://tailwindcss.com/docs/justify-items */
-    /* Use the dev tool in web browser to see CSS grid lines visually */
-    justify-items: start;
-
-    /* Align items. Utilities for controlling how flex and grid items are positioned along a container's cross axis. */
-    /* TL;DR This is for aligning  items horizontally/in center */
-    /* https://tailwindcss.com/docs/align-items */
-    /* Use the dev tool in web browser to see CSS grid lines visually */
-    align-items: end;
-
+    
 }
 
 /* Set up individual image properties */
