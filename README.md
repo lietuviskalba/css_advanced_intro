@@ -1,5 +1,5 @@
 # css_advanced_intro
-CSS advanced introduction for mentoring and future refrence.
+CSS advanced introduction for mentoring and future reference.
 
 >> Documentation for Advanced CSS
 >> Page: 14 (start of CSS advanced)
